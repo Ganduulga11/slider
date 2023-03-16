@@ -1,0 +1,81 @@
+.login-container {
+	width: 100%;
+	height: 100vh;
+	background: #00c6ff; /* fallback for old browsers */
+	background: -webkit-linear-gradient(
+		to right,
+		#0072ff,
+		#00c6ff
+	); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to right,
+		#0072ff,
+		#00c6ff
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.login-card {
+	width: 500px;
+	height: 700px;
+	background-color: white;
+	border-radius: 30px;
+	padding: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 30px;
+}
+
+.login-input-container {
+	width: 100%;
+	height: 45px;
+	position: relative;
+}
+
+.login-input-container input {
+	width: 100%;
+	padding: 10px;
+	border-radius: 10px;
+	border: 1px solid #0072ff;
+	font-size: 1em;
+	outline: none;
+}
+
+.login-input-container span {
+	position: absolute;
+	left: 0;
+	padding: 10px;
+	pointer-events: none;
+	font-size: 0.9em;
+	transition: 0.5s;
+	color: #0072ff;
+}
+
+.login-input-container input:valid ~ span,
+.login-input-container input:focus ~ span {
+	color: #0072ff;
+	transform: translateX(10px) translateY(-10px);
+	background-color: white;
+	font-size: 0.65em;
+	padding: 0 10px;
+}
+
+.login-card button {
+	margin: 20px 0;
+	height: 45px;
+	padding: 10px;
+	border-radius: 10px;
+	background-color: #0072ff;
+	color: white;
+	border: none;
+}
+
+.login-card button:hover {
+	color: #0072ff;
+	background-color: white;
+	border: 2px solid #0072ff;
+}
